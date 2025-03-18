@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-17 15:36:32 by Eclipse SUMO GUI Version 1.18.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="data/1ramp_2x2x3/ramp.net.xml"/>
+        <route-files value="data/1ramp_2x2x3/ramp.rou.xml"/>
+        <additional-files value="data/1ramp_2x2x3/ramp.add.xml"/>
+    </input>
+
+    <traci_server>
+        <remote-port value="35445"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="data/1ramp_2x2x3/ramp.view.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="300.00" id="passage_queue_sens_1" nVehContrib="6" flow="72.00" occupancy="70.75" speed="4.92" harmonicMeanSpeed="0.14" length="5.00" nVehEntered="7"/>
+    <interval begin="300.00" end="600.00" id="passage_queue_sens_1" nVehContrib="2" flow="24.00" occupancy="98.22" speed="0.04" harmonicMeanSpeed="0.04" length="5.00" nVehEntered="2"/>
+    <interval begin="600.00" end="770.00" id="passage_queue_sens_1" nVehContrib="1" flow="21.18" occupancy="98.27" speed="0.02" harmonicMeanSpeed="0.02" length="5.00" nVehEntered="1"/>
+</detector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+    <input>
+        <net-file value="ramp.net.xml"/>
+        <route-files value="ramp.rou.xml"/>
+        <additional-files value="ramp.add.xml"/> <!-- Include  traffic light logic -->
+        <gui-settings-file value="ramp.view.xml"/>
+    </input>
+</configuration>

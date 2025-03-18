@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-17 15:36:32 by Eclipse SUMO GUI Version 1.18.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="data/1ramp_2x2x3/ramp.net.xml"/>
+        <route-files value="data/1ramp_2x2x3/ramp.rou.xml"/>
+        <additional-files value="data/1ramp_2x2x3/ramp.add.xml"/>
+    </input>
+
+    <traci_server>
+        <remote-port value="35445"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="data/1ramp_2x2x3/ramp.view.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="300.00" id="bottle_neck_sens_3" nVehContrib="105" flow="1260.00" occupancy="13.06" speed="14.30" harmonicMeanSpeed="13.40" length="5.00" nVehEntered="106"/>
+    <interval begin="300.00" end="600.00" id="bottle_neck_sens_3" nVehContrib="123" flow="1476.00" occupancy="20.00" speed="10.97" harmonicMeanSpeed="10.25" length="5.00" nVehEntered="123"/>
+    <interval begin="600.00" end="770.00" id="bottle_neck_sens_3" nVehContrib="74" flow="1567.06" occupancy="21.92" speed="10.28" harmonicMeanSpeed="9.93" length="5.00" nVehEntered="74"/>
+</detector>

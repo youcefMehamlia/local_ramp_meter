@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-04 17:17:00 by Eclipse SUMO netedit Version 1.18.0 -->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vType id="car" vClass="passenger" maxSpeed="40" speedFactor="0.7" speedDev="0.5" sigma="1" />
+    <!-- Define Routes -->
+    <route color="1,1,0" edges="entry off_ramp_up_stream main_road acceleration_area end_main_road" id="entry_to_end_main_road"/>
+    <route edges="entry off_ramp_up_stream off_ramp_beginning off_ramp" id="entry_to_off_ramp"/>
+    <route edges="on_ramp passage_area acceleration_area end_main_road" id="on_ramp_to_end_main_road"/>
+    <route edges="main_road acceleration_area end_main_road" id="main_road_to_end_main_road"/>
+
+
+
+     <!-- 2-hour Morning Rush Hour Simulation -->
+
+    <!--  0 - 20 minutes: Light to Moderate Traffic -->
+    <flow id="highway_flow_1" type="car" begin="0" end="1200" route="entry_to_end_main_road" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="900"/>
+    <flow id="onramp_flow_1" type="car" begin="0" end="1200" route="on_ramp_to_end_main_road" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="300"/>
+
+    <!-- 20 - 80 minutes: Peak Rush Hour -->
+    <flow id="highway_flow_2" type="car" begin="1200" end="4800" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="2400"/>
+    <flow id="onramp_flow_2" type="car" begin="1200" end="4800" route="on_ramp_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="600"/>
+
+    <!-- 80 - 120 minutes: Moderate Traffic -->
+    <flow id="highway_flow_3" type="car" begin="4800" end="7200" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="1200"/>
+    <flow id="onramp_flow_3" type="car" begin="4800" end="7200" route="on_ramp_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="400"/>
+
+</routes>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-04 17:17:00 by Eclipse SUMO netedit Version 1.18.0 -->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+
+
+    <vType id="car" vClass="passenger" maxSpeed="40" speedFactor="0.7" speedDev="0.5" sigma="1" />
+    <!-- Define Routes -->
+    <route color="1,1,0" edges="entry off_ramp_up_stream main_road acceleration_area end_main_road" id="entry_to_end_main_road"/>
+    <route edges="entry off_ramp_up_stream off_ramp_beginning off_ramp" id="entry_to_off_ramp"/>
+    <route edges="on_ramp passage_area acceleration_area end_main_road" id="on_ramp_to_end_main_road"/>
+    <route edges="main_road acceleration_area end_main_road" id="main_road_to_end_main_road"/>
+
+
+
+    <flow id="highway_flow_1" type="car" begin="0" end="900" route="entry_to_end_main_road" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="3500"/>
+    <flow id="onramp_flow_1" type="car" begin="0" end="900" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="best" departPos="random"  vehsPerHour="500"/>
+    <flow id="offramp_flow_1" type="car" begin="0" end="900" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="280"/>
+
+    <!-- 6:15–8:15 -->
+    <flow id="highway_flow_2" type="car" begin="900" end="7200" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="5500"/>
+    <flow id="onramp_flow_2" type="car" begin="900" end="7200" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="free" departPos="random"  vehsPerHour="1500"/>
+    <flow id="offramp_flow_2" type="car" begin="900" end="7200" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="440"/>
+
+    <!-- 8:15–8:30 -->
+    <flow id="highway_flow_3" type="car" begin="7200" end="8100" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="4500"/>
+    <flow id="onramp_flow_3" type="car" begin="7200" end="8100" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="free" departPos="random"  vehsPerHour="1000"/>
+    <flow id="offramp_flow_3" type="car" begin="7200" end="8100" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="360"/>
+
+    <!-- 8:30–9:00 -->
+    <flow id="highway_flow_4" type="car" begin="8100" end="9000" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="3500"/>
+    <flow id="onramp_flow_4" type="car" begin="8100" end="9000" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="free" departPos="random"  vehsPerHour="500"/>
+    <flow id="offramp_flow_4" type="car" begin="8100" end="9000" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="280"/>
+
+
+
+
+    <!-- Define Vehicle Types -->
+    
+    <!-- <vType id="normal_car" vClass="passenger" maxSpeed="40" speedFactor="0.9" speedDev="0.2" sigma="0.5" />
+    <vType id="sporty_car" vClass="passenger" maxSpeed="60" speedFactor="1.3" speedDev="0.1" sigma="0.1" />
+    <vType id="trailer" vClass="trailer"  maxSpeed="30" speedFactor="1" speedDev="0.05" />
+    <vType id="coach" vClass="coach"  maxSpeed="30" speedFactor="1" speedDev="0.05" />
+    <vType guiShape="truck" id="truck" length="12" accel="1.5" decel="3.0" maxSpeed="30" sigma="0.8" speedFactor="0.8"/>
+    <vType guiShape="bus" id="bus" length="10" accel="1.8" decel="3.5" maxSpeed="35" sigma="0.6" speedFactor="0.9"/>
+    -->
+
+    <!-- <vType id="normal_car" vClass="passenger" maxSpeed="40" speedFactor="0.7" speedDev="0.5" sigma="1" impatience="1"/> -->
+    <!-- <vType id="sporty_car" vClass="passenger" maxSpeed="60" speedFactor="1.5" speedDev="0.3" sigma="0.05" lcStrategic="1" lcSpeedGain="1" lcImpatience="1"/>
+    <vType id="trailer" vClass="trailer" length="7" accel="0.8" decel="1.5" maxSpeed="25" speedFactor="0.7" speedDev="0.2" sigma="1"/>
+    <vType id="coach" vClass="coach" length="10" accel="1.0" decel="2.0" maxSpeed="30" speedFactor="0.6" speedDev="0.3" sigma="1"/>
+    <vType id="truck"  vClass="truck"  length="12" accel="1.0" decel="2.0" maxSpeed="25" sigma="1" speedFactor="0.6" impatience="1"/>
+    <vType id="bus"  vClass="bus"  length="10" accel="1.2" decel="2.5" maxSpeed="30" sigma="1" speedFactor="0.7"/>
+    
+     -->
+    <!-- Define Routes -->
+    <!-- <route color="1,1,0" edges="entry off_ramp_up_stream main_road acceleration_area end_main_road" id="entry_to_end_main_road"/>
+    <route edges="entry off_ramp_up_stream off_ramp_beginning off_ramp" id="entry_to_off_ramp"/>
+    <route edges="on_ramp passage_area acceleration_area end_main_road" id="on_ramp_to_end_main_road"/>
+    <route edges="main_road acceleration_area end_main_road" id="main_road_to_end_main_road"/> -->
+
+
+
+    <!-- the flow-->
+
+    <!-- <flow id="normal_highway" type="normal_car" begin="0" end="3600" number="400000" route="main_road_to_end_main_road" departSpeed="avg" departLane="best" /> -->
+    <!-- <flow id="normal_highway" type="normal_car" begin="0" end="3600" number="400000" route="entry_to_end_main_road" departSpeed="avg" departLane="best" />
+    <flow id="sporty_highway" type="sporty_car" begin="0" end="3600" number="30000" route="entry_to_end_main_road" departSpeed="avg" departLane="best" />
+    <flow id="coach_highway" type="coach" begin="0" end="3600" vehsPerHour="50" route="entry_to_end_main_road" departSpeed="avg" departLane="best" />
+    <flow id="trailer_highway" type="trailer" begin="0" end="3600" vehsPerHour="50" route="entry_to_end_main_road" departSpeed="avg" departLane="best" />
+    <flow id="truck_flow_highway" begin="0" departLane="best" end="3600"  route="entry_to_end_main_road"  type="truck" vehsPerHour="7500"/>
+    <flow id="bus_flow_highway" begin="0" departLane="best" end="3600"  route="entry_to_end_main_road"  type="bus" vehsPerHour="2500"/> -->
+
+    <!-- <flow id="normal_off_ramp" type="normal_car" begin="0" end="3600" vehsPerHour="4000" route="entry_to_off_ramp" departSpeed="avg" departLane="best" /> -->
+    <!-- <flow id="sporty_off_ramp" type="sporty_car" begin="0" end="3600" vehsPerHour="300" route="entry_to_off_ramp" departSpeed="avg" departLane="best" /> -->
+    <!-- <flow id="coach_off_ramp" type="coach" begin="0" end="3600" vehsPerHour="50" route="entry_to_off_ramp" departSpeed="avg" departLane="best" /> -->
+    <!-- <flow id="trailer_off_ramp" type="trailer" begin="0" end="3600" vehsPerHour="50" route="entry_to_off_ramp" departSpeed="avg" departLane="best" /> -->
+    <!-- <flow begin="0" departLane="best" end="3600" id="truck_flow_off_ramp" route="entry_to_off_ramp"  type="truck" vehsPerHour="75"/> -->
+    <!-- <flow begin="0" departLane="best" end="3600" id="bus_flow_off_ramp" route="entry_to_off_ramp"  type="bus" vehsPerHour="25"/> -->
+
+    <!-- Define Traffic Flows -->       
+    <!-- <flow id="onramp_car_flow" type="normal_car" begin="0" end="3600" vehsPerHour="1500" route="on_ramp_to_end_main_road" departLane="random"/> -->
+    <!-- <flow id="onramp_truck_flow" type="truck" begin="0" end="3600" vehsPerHour="300" route="onramp_to_E3" departLane="random"/>
+    <flow id="mainroad_car_flow" type="car" begin="0" end="3600" vehsPerHour="4000" route="mainroad_to_E3" departLane="random"/>
+    <flow id="mainroad_truck_flow" type="truck" begin="0" end="3600" vehsPerHour="1000" route="mainroad_to_E3" departLane="random"/>
+    <flow id="onramp_taxi_flow" type="taxi" begin="0" end="3600" vehsPerHour="100" route="onramp_to_E3" departLane="random"/>
+     <flow id="mainroad_taxi_flow" type="taxi" begin="0" end="3600" vehsPerHour="100" route="mainroad_to_E3" departLane="random"/> -->
+
+
+</routes>

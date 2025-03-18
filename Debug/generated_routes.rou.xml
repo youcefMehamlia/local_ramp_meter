@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType guiShape="passenger" id="car" length="5" maxAccel="2.6" maxDecel="4.5" maxSpeed="40" sigma="0.5" speedFactor="1.0"/>
+    <vType guiShape="truck" id="truck" length="12" maxAccel="1.5" maxDecel="3.0" maxSpeed="30" sigma="0.8" speedFactor="0.8"/>
+    <vType guiShape="bus" id="bus" length="10" maxAccel="1.8" maxDecel="3.5" maxSpeed="35" sigma="0.6" speedFactor="0.9"/>
+    <route edges="main_road acceleration_area E3" id="test"/>
+    <flow begin="0" departLane="random" end="3600" id="car_flow" route="test" type="car" vehsPerHour="40000"/>
+    <flow begin="0" departLane="random" end="3600" id="truck_flow" route="test" type="truck" vehsPerHour="7500"/>
+    <flow begin="0" departLane="random" end="3600" id="bus_flow" route="test" type="bus" vehsPerHour="2500"/>
+</routes>

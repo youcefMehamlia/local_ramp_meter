@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-03-04 17:17:00 by Eclipse SUMO netedit Version 1.18.0 -->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <vType id="car" vClass="passenger" maxSpeed="40" speedFactor="0.7" speedDev="0.5" sigma="1" />
+    <!-- Define Routes -->
+    <route color="1,1,0" edges="entry off_ramp_up_stream main_road acceleration_area end_main_road" id="entry_to_end_main_road"/>
+    <route edges="entry off_ramp_up_stream off_ramp_beginning off_ramp" id="entry_to_off_ramp"/>
+    <route edges="on_ramp passage_area acceleration_area end_main_road" id="on_ramp_to_end_main_road"/>
+    <route edges="main_road acceleration_area end_main_road" id="main_road_to_end_main_road"/>
+
+
+
+     <!-- 2-hour Morning Rush Hour Simulation -->
+
+    <!--  6:00–6:15 -->
+    <flow id="highway_flow_1" type="car" begin="0" end="900" route="entry_to_end_main_road" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="3500"/>
+    <flow id="onramp_flow_1" type="car" begin="0" end="900" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="best" departPos="random"  vehsPerHour="500"/>
+    <flow id="offramp_flow_1" type="car" begin="0" end="900" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="280"/>
+
+    <!-- 6:15–8:15 -->
+    <flow id="highway_flow_2" type="car" begin="900" end="7200" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="5500"/>
+    <flow id="onramp_flow_2" type="car" begin="900" end="7200" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="free" departPos="random"  vehsPerHour="1500"/>
+    <flow id="offramp_flow_2" type="car" begin="900" end="7200" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="440"/>
+
+    <!-- 8:15–8:30 -->
+    <flow id="highway_flow_3" type="car" begin="7200" end="8100" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="4500"/>
+    <flow id="onramp_flow_3" type="car" begin="7200" end="8100" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="free" departPos="random"  vehsPerHour="1000"/>
+    <flow id="offramp_flow_3" type="car" begin="7200" end="8100" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="360"/>
+
+    <!-- 8:30–9:00 -->
+    <flow id="highway_flow_4" type="car" begin="8100" end="9000" route="entry_to_end_main_road" departSpeed="max" departLane="free" departPos="random"  vehsPerHour="3500"/>
+    <flow id="onramp_flow_4" type="car" begin="8100" end="9000" route="on_ramp_to_end_main_road" departSpeed="avg" departLane="free" departPos="random"  vehsPerHour="500"/>
+    <flow id="offramp_flow_4" type="car" begin="8100" end="9000" route="entry_to_off_ramp" departSpeed="max" departLane="best" departPos="random"  vehsPerHour="280"/>
+</routes>

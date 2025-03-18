@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<routes>
+    <route edges="entry off_ramp_up_stream main_road acceleration_area end_main_road" id="entry_to_end_main_road"/>
+    <route edges="entry off_ramp_up_stream off_ramp_beginning off_ramp" id="entry_to_off_ramp"/>
+    <route edges="on_ramp passage_area acceleration_area end_main_road" id="on_ramp_to_end_main_road"/>
+</routes>
