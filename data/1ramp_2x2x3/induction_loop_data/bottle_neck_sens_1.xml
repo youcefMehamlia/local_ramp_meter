@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-03-17 15:36:32 by Eclipse SUMO GUI Version 1.18.0
+<!-- generated on 2025-03-18 11:01:37 by Eclipse SUMO GUI Version 1.18.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -10,8 +10,12 @@
     </input>
 
     <traci_server>
-        <remote-port value="35445"/>
+        <remote-port value="56893"/>
     </traci_server>
+
+    <random_number>
+        <seed value="42"/>
+    </random_number>
 
     <gui_only>
         <gui-settings-file value="data/1ramp_2x2x3/ramp.view.xml"/>
@@ -21,7 +25,16 @@
 -->
 
 <detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
-    <interval begin="0.00" end="300.00" id="bottle_neck_sens_1" nVehContrib="40" flow="480.00" occupancy="11.63" speed="7.47" harmonicMeanSpeed="5.73" length="5.00" nVehEntered="40"/>
-    <interval begin="300.00" end="600.00" id="bottle_neck_sens_1" nVehContrib="64" flow="768.00" occupancy="24.30" speed="5.45" harmonicMeanSpeed="4.48" length="5.00" nVehEntered="65"/>
-    <interval begin="600.00" end="770.00" id="bottle_neck_sens_1" nVehContrib="40" flow="847.06" occupancy="32.52" speed="4.25" harmonicMeanSpeed="3.90" length="5.00" nVehEntered="42"/>
+    <interval begin="0.00" end="20.00" id="bottle_neck_sens_1" nVehContrib="1" flow="180.00" occupancy="1.32" speed="18.98" harmonicMeanSpeed="18.98" length="5.00" nVehEntered="1"/>
+    <interval begin="20.00" end="40.00" id="bottle_neck_sens_1" nVehContrib="1" flow="180.00" occupancy="3.14" speed="14.43" harmonicMeanSpeed="14.43" length="5.00" nVehEntered="2"/>
+    <interval begin="40.00" end="60.00" id="bottle_neck_sens_1" nVehContrib="2" flow="360.00" occupancy="1.87" speed="15.42" harmonicMeanSpeed="15.24" length="5.00" nVehEntered="1"/>
+    <interval begin="60.00" end="80.00" id="bottle_neck_sens_1" nVehContrib="2" flow="360.00" occupancy="5.43" speed="14.65" harmonicMeanSpeed="14.65" length="5.00" nVehEntered="3"/>
+    <interval begin="80.00" end="100.00" id="bottle_neck_sens_1" nVehContrib="3" flow="540.00" occupancy="8.03" speed="7.59" harmonicMeanSpeed="7.47" length="5.00" nVehEntered="2"/>
+    <interval begin="100.00" end="120.00" id="bottle_neck_sens_1" nVehContrib="1" flow="180.00" occupancy="5.10" speed="6.79" harmonicMeanSpeed="6.79" length="5.00" nVehEntered="3"/>
+    <interval begin="120.00" end="140.00" id="bottle_neck_sens_1" nVehContrib="2" flow="360.00" occupancy="5.79" speed="8.77" harmonicMeanSpeed="8.53" length="5.00" nVehEntered="1"/>
+    <interval begin="140.00" end="160.00" id="bottle_neck_sens_1" nVehContrib="2" flow="360.00" occupancy="9.65" speed="5.47" harmonicMeanSpeed="5.35" length="5.00" nVehEntered="3"/>
+    <interval begin="160.00" end="180.00" id="bottle_neck_sens_1" nVehContrib="2" flow="360.00" occupancy="4.86" speed="9.99" harmonicMeanSpeed="9.67" length="5.00" nVehEntered="1"/>
+    <interval begin="180.00" end="200.00" id="bottle_neck_sens_1" nVehContrib="3" flow="540.00" occupancy="15.32" speed="5.42" harmonicMeanSpeed="4.89" length="5.00" nVehEntered="3"/>
+    <interval begin="200.00" end="220.00" id="bottle_neck_sens_1" nVehContrib="5" flow="900.00" occupancy="31.48" speed="4.65" harmonicMeanSpeed="4.43" length="5.00" nVehEntered="6"/>
+    <interval begin="220.00" end="226.00" id="bottle_neck_sens_1" nVehContrib="2" flow="1200.00" occupancy="23.24" speed="5.39" harmonicMeanSpeed="4.89" length="5.00" nVehEntered="1"/>
 </detector>

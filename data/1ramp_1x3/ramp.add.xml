@@ -25,7 +25,7 @@
     <inductionLoop id="up_stream_sens_22" lane="main_road_2" pos="445.05" period="20.00" file="induction_loop_data/up_stream_sens_22.xml"/>
 
 
-        <tlLogic id="ramp_meter" type="static" programID="mult_veh_per_green" offset="0">
+    <tlLogic id="ramp_meter" type="static" programID="mult_veh_per_green" offset="0">
         <phase duration="6"  state="G"/>
         <phase duration="3"  state="y"/>
         <phase duration="2"  state="r"/>

@@ -4,17 +4,18 @@ import os
 #SUMO configuration
 MAX_STEP = 7200
 SUMO_BINARY = "sumo-gui"  # Use "sumo" for command-line only
-# SUMO_CONFIG_FILE = {"data/1ramp_1x3/ramp.sumocfg",
-#                     "data/1ramp_2x1x3/ramp.sumocfg",
-#                     "data/1ramp_2x2x3/ramp.sumocfg"}
-# SUMO_CONFIG_FILE = "data/1ramp_2x1x3/ramp.sumocfg"
-SUMO_CONFIG_FILE = "data/1ramp_1x3/ramp.sumocfg"
-# SUMO_CONFIG_FILE = "data/1ramp_2x2x3/ramp.sumocfg"
+# SUMO_BINARY = "sumo"  # Use "sumo" for command-line only
+SUMO_CONFIG_FILE = {"data/1ramp_1x3/ramp.sumocfg",
+                    "data/1ramp_2x1x3/ramp.sumocfg",
+                    "data/1ramp_2x2x3/ramp.sumocfg"}
+DEFAULT_SUMO_CONFIG_FILE = "data/1ramp_1x3/ramp.sumocfg"
 
 SIMULATION_SPEED = 80
 SIMULATION_MODE = "real world"
 
-
+# Edge Definitions 
+UPSTREAM_EDGE, MERGING_EDGE, DOWNSTREAM_EDGE, ON_RAMP_EDGE = "main_road", "acceleration_area", "end_main_road", "on_ramp"
+RAMP_ID = "ramp_meter"
 
 # Sensor and traffic light IDs (replace with your actual IDs)
 DOWNSTREAM_EDGE_ID = "acceleration_area"  # Mainstream edge after the merge

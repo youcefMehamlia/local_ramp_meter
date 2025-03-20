@@ -1,3 +1,5 @@
+#this file is not used in the run dimulation, it was just to test the logic behind alinea
+
 import traci
 import traci.constants as tc
 import csv
